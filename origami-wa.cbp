@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="origami-wa" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/origami-wa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/origami-wa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="glut" />
+			<Add library="GLEW" />
+			<Add library="SOIL" />
+			<Add library="alut" />
+		</Linker>
+		<Unit filename="core/coreengine.cpp" />
+		<Unit filename="core/coreengine.h" />
+		<Unit filename="core/input.cpp" />
+		<Unit filename="core/input.h" />
+		<Unit filename="core/scene.cpp" />
+		<Unit filename="core/scene.h" />
+		<Unit filename="core/timer.cpp" />
+		<Unit filename="core/timer.h" />
+		<Unit filename="core/transform.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="models/cube.obj" />
+		<Unit filename="models/cylinder.obj" />
+		<Unit filename="models/paperbird.obj" />
+		<Unit filename="models/plane.obj" />
+		<Unit filename="models/sphere.obj" />
+		<Unit filename="physics/boundingbox.cpp" />
+		<Unit filename="physics/boundingbox.h" />
+		<Unit filename="physics/boundingsphere.cpp" />
+		<Unit filename="physics/boundingsphere.h" />
+		<Unit filename="physics/collider.cpp" />
+		<Unit filename="physics/collider.h" />
+		<Unit filename="physics/intersect.h" />
+		<Unit filename="physics/physicsengine.cpp" />
+		<Unit filename="physics/physicsengine.h" />
+		<Unit filename="physics/physicsobject.cpp" />
+		<Unit filename="physics/physicsobject.h" />
+		<Unit filename="physics/plane.cpp" />
+		<Unit filename="physics/plane.h" />
+		<Unit filename="rendering/camera.cpp" />
+		<Unit filename="rendering/camera.h" />
+		<Unit filename="rendering/light.cpp" />
+		<Unit filename="rendering/light.h" />
+		<Unit filename="rendering/material.cpp" />
+		<Unit filename="rendering/material.h" />
+		<Unit filename="rendering/mesh.cpp" />
+		<Unit filename="rendering/mesh.h" />
+		<Unit filename="rendering/renderingengine.cpp" />
+		<Unit filename="rendering/renderingengine.h" />
+		<Unit filename="rendering/shader.cpp" />
+		<Unit filename="rendering/shader.h" />
+		<Unit filename="rendering/texture.cpp" />
+		<Unit filename="rendering/texture.h" />
+		<Unit filename="rendering/window.cpp" />
+		<Unit filename="rendering/window.h" />
+		<Unit filename="scene01.cpp" />
+		<Unit filename="scene01.h" />
+		<Unit filename="scene02.cpp" />
+		<Unit filename="scene02.h" />
+		<Unit filename="scene03.cpp" />
+		<Unit filename="scene03.h" />
+		<Unit filename="scenegraph/cameracomponent.cpp" />
+		<Unit filename="scenegraph/cameracomponent.h" />
+		<Unit filename="scenegraph/component.h" />
+		<Unit filename="scenegraph/meshrenderer.h" />
+		<Unit filename="scenegraph/node.cpp" />
+		<Unit filename="scenegraph/node.h" />
+		<Unit filename="scenegraph/physicsenginecomponent.cpp" />
+		<Unit filename="scenegraph/physicsenginecomponent.h" />
+		<Unit filename="scenegraph/physicsobjectcomponent.cpp" />
+		<Unit filename="scenegraph/physicsobjectcomponent.h" />
+		<Unit filename="shaders/basic.fs.glsl" />
+		<Unit filename="shaders/basic.vs.glsl" />
+		<Unit filename="shaders/phong.fs.glsl" />
+		<Unit filename="shaders/phong.vs.glsl" />
+		<Unit filename="textures/grass.jpg" />
+		<Unit filename="textures/lawn.jpg" />
+		<Unit filename="textures/paper.jpg" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
